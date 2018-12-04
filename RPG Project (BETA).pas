@@ -32,6 +32,17 @@ begin
 	readkey;
 	
 end;
+
+procedure mapas;
+begin
+	clrscr; //LimpaTela
+	writeln;
+	writeln('              	     SELEÇÃO DE MAPAS');
+	writeln('|------------------------------------------------------|');
+	writeln('|[1] Terra baixa   |[2] Terra Média   |[3] Terra Alta  |');
+	writeln('|    Lvl: 1 ~ 8    |    Lvl: 16 ~ 30  |    Lvl: 35 ~ 99|');
+	writeln('|------------------------------------------------------|');
+end;
 	   var
 	   	opc: char;
 Begin
@@ -55,5 +66,9 @@ Begin
 	readln(opc);
 	 	personagens;
 //******* FIM DO MENU **********
+
+//*********** MAPAS **************
+	mapas;
+//******** FIM DOS MAPAS *********
   
 End.
