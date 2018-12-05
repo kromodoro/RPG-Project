@@ -4,10 +4,21 @@ Program RPG_Project ;
   	Versão: 0.1
 
 	}
+	
+procedure parabens;
+begin
+	writeln();
+	writeln();
+	writeln(' _______________________________________________________');
+	writeln('|                                                       |');
+	writeln('|               ------  PARABÉNS ------                 |');
+	writeln('|_______________________________________________________|');
+	writeln();
+end;
 //*********** PERSONAGENS **************
 procedure personagens;
 	var
-	 per, Forca, Mana: integer;
+	 per: integer;
 	 classe,nick: string;
 begin
 	gotoxy(30,3);
@@ -33,16 +44,8 @@ begin
 		case per of
 			1: begin
 					clrscr; //LimpaTela
-					Forca:= 9;
-					Mana:= 80;
 					classe:= 'LUTADOR';
-					writeln();
-					writeln();
-					writeln(' _______________________________________________________');
-					writeln('|                                                       |');
-					writeln('|               ------  PARABÉNS ------                 |');
-			    writeln('|_______________________________________________________|');
-			    writeln();
+					parabens;
 					write('|> Você criou um ');
 					textcolor(lightred);
 					writeln(classe,'!');
@@ -51,36 +54,20 @@ begin
 				 end;
 			2: begin
 					clrscr; //Limpatela
-					Forca:= 7;
-					Mana:= 75;
 					classe:= 'ARQUEIRO';
-					writeln();
-					writeln();
-					writeln(' _______________________________________________________');
-					writeln('|                                                       |');
-					writeln('|               ------  PARABÉNS ------                 |');
-			    writeln('|_______________________________________________________|');
-			    writeln();
+					parabens;
 					write('|> Você criou um ');
-					textcolor(lightred);
+					textcolor(white);
 					writeln(classe,'!');
 					textcolor(lightgreen);
 					writeln('|');
 			   end;
 			3: begin
 					clrscr; //LimpaTela
-					Forca:= 5;
-					Mana:= 180;
 					classe:= 'MAGO';
-					writeln();
-					writeln();
-					writeln(' _______________________________________________________');
-					writeln('|                                                       |');
-					writeln('|               ------  PARABÉNS ------                 |');
-			    writeln('|_______________________________________________________|');
-			    writeln();
+					parabens;
 					write('|> Você criou um ');
-					textcolor(lightred);
+					textcolor(lightblue);
 					writeln(classe,'!');
 					textcolor(lightgreen);
 					writeln('|');
