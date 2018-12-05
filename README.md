@@ -16,14 +16,16 @@
  	 - Mago <br>
 
 ##### mapas
+!Mudança no layout dos mapas será bem vindo.
  	> Level 1 to 8 <br>
  	> Level 16 to 30 <br>
 	> Level 35 to 99 <br>
 
 ##### monstros
-
+! Preciso de nomes para os monstros ao total são 5 por mapa.
 ##### historia
-
+! Preferêncialmente a jornada do herói.
 ##### guia do jogo
+! Quem poder fazer um detonado do jogo eu agradeço.
 
 
