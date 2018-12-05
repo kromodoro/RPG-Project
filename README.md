@@ -1,8 +1,8 @@
 # RPG-Project
 
 <b>BRANCH'S</b>
-#####master
-#####menu
+##### master
+##### menu
  	> Personagens
  	> História
  	> Guia do jogo
@@ -15,15 +15,15 @@
  	 - Arqueiro <br>
  	 - Mago <br>
 
-#####mapas
+##### mapas
  	> Level 1 to 8 <br>
  	> Level 16 to 30 <br>
 	> Level 35 to 99 <br>
 
-#####monstros
+##### monstros
 
-#####historia
+##### historia
 
-#####guia do jogo
+##### guia do jogo
 
 
