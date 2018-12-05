@@ -78,7 +78,6 @@ begin
 		end;
 		write('|Digite o nome do seu personagem: ');
 		readln(nick);
-	readkey;
 end;
 //*************************************
 //******** MAPAS ************
@@ -130,15 +129,17 @@ Begin
 		
 		case opc of
 			1: begin
+			//********** PERSONAGENS ***********
 					personagens;
 			   end;
 	    2: begin
-	    		//historia;
+	    //********* HISTÓRIA DO JOGO ***********
 	    	 end;
 	    3: begin
-	    		//guia_jogo;
+	    //********* GUIA DO JOGO *******
 	       end;
 	    4: begin
+	    //********* CREDITOS **********
 	    		creditos;
 	       end;
 	    5: begin
