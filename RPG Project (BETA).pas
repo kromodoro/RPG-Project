@@ -80,18 +80,7 @@ begin
 		readln(nick);
 end;
 //*************************************
-//******** MAPAS ************
-procedure mapas;
-begin
-	clrscr; //LimpaTela
-	writeln;
-	writeln('              	     SELEÇÃO DE MAPAS');
-	writeln('|------------------------------------------------------|');
-	writeln('|[1] Terra baixa   |[2] Terra Média   |[3] Terra Alta  |');
-	writeln('|    Lvl: 1 ~ 8    |    Lvl: 16 ~ 30  |    Lvl: 35 ~ 99|');
-	writeln('|------------------------------------------------------|');
-end;
-//****************************
+
 //******* CRÉDITOS ********
 procedure creditos;
 begin
@@ -103,8 +92,11 @@ begin
 end;
 //*************************
 	   var
-	   	opc: integer;
+	   	opc, level: integer;
 Begin
+//**** ATRIBUIÇÕES ******
+	level:= 20;
+//***********************
 //*********** MENU *************
 	writeln();
 	writeln('         MENU');
@@ -152,7 +144,51 @@ Begin
 //***********************************
 
 //*********** MAPAS **************
-
+ if (level < 15) then
+ 	begin
+ 		clrscr; //LimpaTela
+		writeln;
+		gotoxy(50,3);
+		writeln('  SELEÇÃO DE MAPAS');
+		gotoxy(50,4);
+		writeln('|------------------|');
+		gotoxy(50,5);
+		writeln('|[1] Terra baixa   |');
+		gotoxy(50,6);
+		writeln('|    Lvl: 1 ~ 8    |');
+		gotoxy(50,7);
+		writeln('|------------------|');
+ 	end
+ 	else if (level >= 15 ) and (level <29) then
+ 		begin
+ 			clrscr; //LimpaTela
+			writeln;
+		  gotoxy(40,3);
+			writeln('             SELEÇÃO DE MAPAS');
+			gotoxy(40,4);
+			writeln('|-------------------------------------|');
+			gotoxy(40,5);
+			writeln('|[1] Terra baixa   |[2] Terra Média   |');
+			gotoxy(40,6);
+			writeln('|    Lvl: 1 ~ 8    |    Lvl: 16 ~ 30  |');
+			gotoxy(40,7);
+			writeln('|-------------------------------------|');
+ 		end 
+ 		else if (level >= 29) then
+ 		begin
+ 			clrscr; //LimpaTela
+		writeln;
+		gotoxy(30,3);
+		writeln('              	     SELEÇÃO DE MAPAS');
+		gotoxy(30,4);
+		writeln('|------------------------------------------------------|');
+		gotoxy(30,5);
+		writeln('|[1] Terra baixa   |[2] Terra Média   |[3] Terra Alta  |');
+		gotoxy(30,6);
+		writeln('|    Lvl: 1 ~ 8    |    Lvl: 16 ~ 30  |    Lvl: 35 ~ 99|');
+		gotoxy(30,7);
+		writeln('|------------------------------------------------------|');
+ 		end;
 //******** FIM DOS MAPAS *********
   
 End.
