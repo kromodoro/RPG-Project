@@ -45,28 +45,52 @@ begin
 			    writeln();
 					write('|> Você criou um ');
 					textcolor(lightred);
-					writeln('LUTADOR!');
+					writeln(classe,'!');
 					textcolor(lightgreen);
 					writeln('|');
-					write('|Digite o nome do seu personagem: ');
-					readln(nick);
 				 end;
 			2: begin
 					clrscr; //Limpatela
 					Forca:= 7;
 					Mana:= 75;
 					classe:= 'ARQUEIRO';
+					writeln();
+					writeln();
+					writeln(' _______________________________________________________');
+					writeln('|                                                       |');
+					writeln('|               ------  PARABÉNS ------                 |');
+			    writeln('|_______________________________________________________|');
+			    writeln();
+					write('|> Você criou um ');
+					textcolor(lightred);
+					writeln(classe,'!');
+					textcolor(lightgreen);
+					writeln('|');
 			   end;
 			3: begin
 					clrscr; //LimpaTela
 					Forca:= 5;
 					Mana:= 180;
 					classe:= 'MAGO';
+					writeln();
+					writeln();
+					writeln(' _______________________________________________________');
+					writeln('|                                                       |');
+					writeln('|               ------  PARABÉNS ------                 |');
+			    writeln('|_______________________________________________________|');
+			    writeln();
+					write('|> Você criou um ');
+					textcolor(lightred);
+					writeln(classe,'!');
+					textcolor(lightgreen);
+					writeln('|');
 			   end;
 			else
 			    clrscr; //LimpaTela
 			    writeln('Digite apenas valores de [1] até [3]: ');
 		end;
+		write('|Digite o nome do seu personagem: ');
+		readln(nick);
 	readkey;
 end;
 //*************************************
