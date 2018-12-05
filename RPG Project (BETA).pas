@@ -4,9 +4,11 @@ Program RPG_Project ;
   	Versão: 0.1
 
 	}
+//*********** PERSONAGENS **************
 procedure personagens;
 	var
-		opc: char;
+	 per, Forca, Mana: integer;
+	 classe,nick: string;
 begin
 	gotoxy(30,3);
 	writeln('           SELEÇÃO  DE  PERSONAGENS ');
@@ -22,17 +24,53 @@ begin
 	writeln('|  Mana: 80      |  Mana: 75     |  Mana: 180|');
 	gotoxy(30,9);
 	writeln('----------------------------------------------');
-	
 	//Limpa linha
 		gotoxy(1,16);
 		clreol;
 	//************
 	write('Escola um personagem: ');
-	readln(opc);
+	readln(per);
+		case per of
+			1: begin
+					clrscr; //LimpaTela
+					Forca:= 9;
+					Mana:= 80;
+					classe:= 'LUTADOR';
+					writeln();
+					writeln();
+					writeln(' _______________________________________________________');
+					writeln('|                                                       |');
+					writeln('|               ------  PARABÉNS ------                 |');
+			    writeln('|_______________________________________________________|');
+			    writeln();
+					write('|> Você criou um ');
+					textcolor(lightred);
+					writeln('LUTADOR!');
+					textcolor(lightgreen);
+					writeln('|');
+					write('|Digite o nome do seu personagem: ');
+					readln(nick);
+				 end;
+			2: begin
+					clrscr; //Limpatela
+					Forca:= 7;
+					Mana:= 75;
+					classe:= 'ARQUEIRO';
+			   end;
+			3: begin
+					clrscr; //LimpaTela
+					Forca:= 5;
+					Mana:= 180;
+					classe:= 'MAGO';
+			   end;
+			else
+			    clrscr; //LimpaTela
+			    writeln('Digite apenas valores de [1] até [3]: ');
+		end;
 	readkey;
-	
 end;
-
+//*************************************
+//******** MAPAS ************
 procedure mapas;
 begin
 	clrscr; //LimpaTela
@@ -43,8 +81,19 @@ begin
 	writeln('|    Lvl: 1 ~ 8    |    Lvl: 16 ~ 30  |    Lvl: 35 ~ 99|');
 	writeln('|------------------------------------------------------|');
 end;
+//****************************
+//******* CRÉDITOS ********
+procedure creditos;
+begin
+	clrscr; //LimpaTela
+	gotoxy(50,3);
+	writeln('Desenvolvedor: @Kromodoro');
+	gotoxy(50,4);
+	writeln('E-mail: kromodoro@gmail.com');
+end;
+//*************************
 	   var
-	   	opc: char;
+	   	opc: integer;
 Begin
 //*********** MENU *************
 	writeln();
@@ -61,14 +110,37 @@ Begin
 	writeln('----------------------');
 	writeln('|> [5] - SAIR         |');
 	writeln('----------------------');
+//******* FIM DO MENU **********
+
+//********** CASOS DO MENU **********
 	writeln();
 	write('Escolha uma opção: ');
 	readln(opc);
-	 	personagens;
-//******* FIM DO MENU **********
+		
+		case opc of
+			1: begin
+					personagens;
+			   end;
+	    2: begin
+	    		//historia;
+	    	 end;
+	    3: begin
+	    		//guia_jogo;
+	       end;
+	    4: begin
+	    		creditos;
+	       end;
+	    5: begin
+	       end;
+	    else
+	    
+	    end;
+	  
+	    readkey;
+//***********************************
 
 //*********** MAPAS **************
-	mapas;
+
 //******** FIM DOS MAPAS *********
   
 End.
