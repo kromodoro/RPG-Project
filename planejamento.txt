@@ -1,0 +1,28 @@
+ = Como calcular a diferença de level dos monstros por mapa
+
+ Fórmula: (Level(inicial) - Level(final))/ quantidade de monstros 
+ Somente a parte inteira arredondada para cima Ex: 1,6 será (2).
+
+ Mapa 1 - Level de 1 até 8 (dif 1,6)
+  - Monstro 1 : Level 1
+  - Monstro 2 : Level 3
+  - Monstro 3 : Level 5
+  - Monstro 4 : Level 7
+  - Monstro 5 : Level 8 
+  - Monstro 6 : Level 10 - BOSS
+
+ Mapa 2 - Level de 16 até 30 (dif 2,8)
+  - Monstro 1 : Level 16
+  - Monstro 2 : Level 19
+  - Monstro 3 : Level 22
+  - Monstro 4 : Level 25
+  - Monstro 5 : Level 28
+  - Monstro 6 : Level 30 - BOSS
+
+ Mapa 3 - Level de 30 até 99 (dif 13,8)
+  - Monstro 1 : Level 30
+  - Monstro 2 : Level 44
+  - Monstro 3 : Level 58
+  - Monstro 4 : Level 72
+  - Monstro 5 : Level 86
+  - Monstro 6 : Level 99 - BOSS
