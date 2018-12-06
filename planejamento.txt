@@ -26,3 +26,17 @@
   - Monstro 4 : Level 72
   - Monstro 5 : Level 86
   - Monstro 6 : Level 99 - BOSS
+
+  =======================================================================
+   = Como calcular os status dos monstros por level
+
+   Mapa 1
+    //O HIT do MOB sera o seu LVL vezes a diferença de lvl no mapa 1 que é [1.6]
+	    HIT - (Level * 1.6) - Mapa 1
+	    HIT - (Level * 2.8) - Mapa 2
+	    HIT - (Level * 13.8) - Mapa 3
+
+    //O HP inicial são 3 HITS de mago menos(-) o level do mob (como mago bate 5: 3x5 = 15 - 1)
+	   	HP: (Level * 3 * 5) - Level
+	   	XP: 10*Level
+	   	GOLD: 28 - Dobro do HP
