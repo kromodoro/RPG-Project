@@ -27,62 +27,75 @@ Begin
 	level[3,4] := 72; //Mapa 1 Monstro Level 72
 	level[3,5] := 86; //Mapa 1 Monstro Level 86
 	level[3,6] := 99; //Mapa 1 BOSS lvl 99
-	 x:=0;
-	 y:=1;
+	
 		for i:=1 to 3 do 
 			begin
+			 x:=1;
+			 textcolor(white); //Fonte branca
 				if (i = 1) then
 					writeln(' - Mapa ',i)
 					else if (i =2) then
 						begin
-							//gotoxy(20,1);
+							gotoxy(20,1);
 							writeln(' - Mapa ',i)
 						end else if (i =3) then
 							begin
-							//	gotoxy(40,1);
+								gotoxy(40,1);
 								writeln(' - Mapa ',i);
 							end;
+				textcolor(10); //Fonte verde
 				for j:=1 to 6 do
-					begin
-						x:= j +x;
+					begin	
 					  hp := (level[i,j] * 3 *5) - level[i,j];
 					  xp := (10* level[i,j]);
 					//**** CONDIÇÃO DO HIT POR MAPA
 					  if (i=1) then
 					  begin
 					  	hit := (level[i,j] * 1.6);
+					  	textcolor(white); //Fonte branca
 					  	writeln('	Level: ',level[i,j]);
+					  	textcolor(10); //Fonte verde
 							writeln('	HIT: ',hit:5:0);
 							writeln('	HP: ',hp:6:0);
 							writeln('	XP: ',xp:6:0);
 						end 
 					  else if (i=2) then
 					  begin
-					  
 					  	hit := (level[i,j] * 2.8);
-					  	//gotoxy(20,j);
-					  	writeln('	Level: ',level[i,j]);
-					  	//gotoxy(20,j);
-							writeln('	HIT: ',hit:5:0);
-							//gotoxy(20,j);
-							writeln('	HP: ',hp:6:0);
-							//gotoxy(20,j);
-							writeln('	XP: ',xp:6:0);
+					  	x:= x +1;
+					  	gotoxy(20,x);
+					  	textcolor(white); //Fonte branca
+					  	writeln(x,'	Level: ',level[i,j]);
+					  	textcolor(10); //Fonte verde
+					  	x:= x + 1;
+					  	gotoxy(20,x);
+							writeln(x,'	HIT: ',hit:5:0);
+							x:= x + 1;
+							gotoxy(20,x);
+							writeln(x,'	HP: ',hp:6:0);
+							x:= x +1;
+							gotoxy(20,x);
+							writeln(x,'	XP: ',xp:6:0);
 						end
 						else
 						begin
 							hit := (level[i,j] * 13.8);
-							//gotoxy(40,x+1); 
+							x:= x +1;
+							gotoxy(40,x); 
+							textcolor(white); //Fonte branca
 							writeln('	Level: ',level[i,j]);
-						//	gotoxy(40,x+2);
+							textcolor(10); //Fonte verde
+							x:= x +1;
+						  gotoxy(40,x);
 							writeln('	HIT: ',hit:5:0);
-							//gotoxy(40,x+3);
+							x:= x +1;
+							gotoxy(40,x);
 							writeln('	HP: ',hp:6:0);
-							//gotoxy(40,x+4);
+							x:= x+ 1;
+							gotoxy(40,x);
 							writeln('	XP: ',xp:6:0);
 						//*****************************
 					end;  
-					 
 					end; 
 					writeln();
 			end;
