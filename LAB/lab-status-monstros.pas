@@ -48,6 +48,7 @@ Begin
 					begin	
 					  hp := (level[i,j] * 3 *5) - level[i,j];
 					  xp := (10* level[i,j]);
+					  gold := (hp*2); 
 					//**** CONDIÇÃO DO HIT POR MAPA
 					  if (i=1) then
 					  begin
@@ -58,6 +59,7 @@ Begin
 							writeln('	HIT: ',hit:5:0);
 							writeln('	HP: ',hp:6:0);
 							writeln('	XP: ',xp:6:0);
+							writeln('	GOLD: ',gold:6:0);
 						end 
 					  else if (i=2) then
 					  begin
@@ -65,17 +67,20 @@ Begin
 					  	x:= x +1;
 					  	gotoxy(20,x);
 					  	textcolor(white); //Fonte branca
-					  	writeln(x,'	Level: ',level[i,j]);
+					  	writeln('	Level: ',level[i,j]);
 					  	textcolor(10); //Fonte verde
 					  	x:= x + 1;
 					  	gotoxy(20,x);
-							writeln(x,'	HIT: ',hit:5:0);
+							writeln('	HIT: ',hit:5:0);
 							x:= x + 1;
 							gotoxy(20,x);
-							writeln(x,'	HP: ',hp:6:0);
+							writeln('	HP: ',hp:6:0);
 							x:= x +1;
 							gotoxy(20,x);
-							writeln(x,'	XP: ',xp:6:0);
+							writeln('	XP: ',xp:6:0);
+							x:= x +1;
+							gotoxy(20,x);
+							writeln('	GOLD: ',gold:6:0);
 						end
 						else
 						begin
@@ -94,6 +99,9 @@ Begin
 							x:= x+ 1;
 							gotoxy(40,x);
 							writeln('	XP: ',xp:6:0);
+							x:= x+1;
+							gotoxy(40,x);
+							writeln('	GOLD: ',gold:6:0);
 						//*****************************
 					end;  
 					end; 
