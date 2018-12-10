@@ -1,4 +1,4 @@
- = Como calcular a diferença de level dos monstros por mapa
+ = Como calcular a diferença de level dos monstros por mapa:
 
  Fórmula: (Level(inicial) - Level(final))/ quantidade de monstros 
  Somente a parte inteira arredondada para cima Ex: 1,6 será (2).
@@ -8,8 +8,8 @@
   - Monstro 2 : Level 3
   - Monstro 3 : Level 5
   - Monstro 4 : Level 7
-  - Monstro 5 : Level 8 
-  - Monstro 6 : Level 10 - BOSS
+  - Monstro 5 : Level 9 
+  - Monstro 6 : Level 11 - BOSS
 
  Mapa 2 - Level de 16 até 30 (dif 2,8)
   - Monstro 1 : Level 16
@@ -36,7 +36,7 @@
 	    HIT - (Level * 2.8) - Mapa 2
 	    HIT - (Level * 13.8) - Mapa 3
 
-    //O HP inicial são 3 HITS de mago menos(-) o level do mob (como mago bate 5: 3x5 = 15 - 1)
+    //O HP innicial será 3x5 menos(-) o level do mob( 3x5 = 15 - 1)
 	   	HP: (Level * 3 * 5) - Level
 	   	XP: 10*Level
-	   	GOLD: 28 - Dobro do HP
+	   	GOLD: (Dobro do HP)
