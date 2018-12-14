@@ -1,0 +1,12 @@
+Pesquisas:::::
+
+1ª linha - data atual (ex: 01/01/2011)
+2ª linha - horário (ex: 12:00 - PM)
+3ª linha - Titulo [Negrito, centralizado, 16px, calibri(corpo)]
+4ª linha - subtitulo
+
+5ª linha em diante relatar os processos.
+
+Penultima linha - escrever: Referencia(s)
+Ultima linha - Link's
+====================================================================

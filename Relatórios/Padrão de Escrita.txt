@@ -1,0 +1,5 @@
+Dia por extenso, seguido de ifem e data do ocorrido
+
+horário de inicio, ifem e descrição do que foi feito.
+
+horário final, ifem e anotações feitas e qual pasta será salva.
